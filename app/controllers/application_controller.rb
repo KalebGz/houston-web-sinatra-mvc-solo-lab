@@ -5,8 +5,14 @@ class ApplicationController < Sinatra::Base
       end
     
       get '/' do
+        @puppies = Puppy.all
         erb :welcome
       end
+
+
+#       Create a new puppy
+# Edit an exsiting puppy
+# Delete an exsiting puppy
 
    
 end
